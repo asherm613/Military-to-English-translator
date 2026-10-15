@@ -59,7 +59,7 @@ String[] codes = {
     "RTB",
     "OSCAR MIKE",
     "BINGO FUEL",
-    "DANGER_CLOSE",
+    "DANGER CLOSE",
     "CASEVAC",
     "TANGO",
     "TIC",
