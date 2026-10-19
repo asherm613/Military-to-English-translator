@@ -1,7 +1,9 @@
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
+        boolean state = true;
         Scanner scan = new Scanner(System.in);
+        String userinput;
         String[] definitions = {
     "will comply",
     "weapon released",
@@ -85,19 +87,20 @@ String[] codes = {
     "CP",
     "MSR",
     "MLR",
-    "BRAVO_ZULU",
+    "BRAVO ZULU",
     "SNAFU",
     "FUBAR",
     "BROKEN ARROW",
     "FPF"
 };
-        String userinput = scan.nextLine();
+    while (state) {
+        userinput = scan.nextLine();
         for (int x = 0; x <= 41; x++) {
             if (userinput.toUpperCase().equals(codes[x]))
                 System.out.println(definitions[x]);
             else if (userinput.toUpperCase().equals(definitions[x]))
                 System.out.println(codes[x]);
+            }
         }
-    
     }
 }
