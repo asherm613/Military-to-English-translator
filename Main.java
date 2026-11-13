@@ -1,7 +1,6 @@
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
-        boolean state = true;
         Scanner scan = new Scanner(System.in);
         String userinput;
         String[] definitions = {
@@ -93,7 +92,7 @@ String[] codes = {
     "BROKEN ARROW",
     "FPF"
 };
-    while (state) {
+    while (true) {
         userinput = scan.nextLine();
         for (int x = 0; x <= 41; x++) {
             if (userinput.toUpperCase().equals(codes[x]))
